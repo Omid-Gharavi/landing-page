@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className='mx-[124px] '>
+      <div className='mx-[124px] max-lg:mx-4'>
         <Header />
         <Hero />
       </div>

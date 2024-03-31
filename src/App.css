@@ -16,9 +16,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .header>div {
-        margin-inline: 2rem;
-    }
 
     .header div ul,
     .header div button {
