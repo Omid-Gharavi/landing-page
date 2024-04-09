@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from 'react'
 import logo from '../../assets/Logo.svg'
-import Sidebar from '../sidebar/Sidebar';
+import Sidebar, { links } from '../sidebar/Sidebar';
 
 export const dataTrasnfer = createContext()
 
@@ -14,10 +14,9 @@ const Header = () => {
         <div className='flex items-center justify-between'>
           <img src={logo} alt="logo" />
           <ul className='flex gap-8 font-bold text-[1.125rem]'>
-            <li className='cursor-pointer py-4'>About</li>
-            <li className='cursor-pointer py-4'>Services</li>
-            <li className='cursor-pointer py-4'>Portfolio</li>
-            <li className='cursor-pointer py-4'>Blog</li>
+            {
+              links.map((link, index) => <Li text={link.title} href={link.href} key={index + 1} />)
+            }
           </ul>
           <button type='button' className='w-[127px] h-12 bg-[#1F1F1F] text-slate-50 font-bold'>Let's Talk</button>
           <div className="ham hidden flex-col gap-1 w-8" onClick={() => setIsTrue(!isTrue)}>
@@ -31,6 +30,12 @@ const Header = () => {
         <Sidebar />
       </dataTrasnfer.Provider>
     </>
+  )
+}
+
+const Li = ({ text, href }) => {
+  return (
+    <a className='cursor-pointer py-4 myTest' href={href}>{text}</a>
   )
 }
 
