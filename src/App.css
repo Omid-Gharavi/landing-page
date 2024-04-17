@@ -13,7 +13,12 @@
 
 body {
     min-height: 100vh;
-    background: #FFD4D0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 @media (max-width: 1024px) {
