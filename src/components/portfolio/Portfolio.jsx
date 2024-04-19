@@ -36,15 +36,18 @@ const Portfolio = () => {
     ]
 
     return (
-        <div className='min-h-[318px] bg-[#FFD4D0] px-2'>
-            <div className='pt-[50px] flex flex-col items-center justify-center text-center'>
-                <p className='font-bold text-[36px]'>My Portfolio</p>
-                <p className='mt-6 max-w-[810px]'>Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
-            </div>
-            <div className='w-full max-w-[1192px] absolute left-[50%] translate-x-[-50%] mt-[42px] flex flex-wrap justify-center gap-16 max-lg:px-2'>
-                {
-                    lists.map((list, index) => <Cards img={list.img} title={list.title} categories={list.category} key={index + 1} />)
-                }
+        <div className='relative min-h-[940px]'>
+            <div className='absolute w-full min-h-[318px] -z-30 bg-[#FFD4D0]'></div>
+            <div className='px-2'>
+                <div className='pt-[50px] flex flex-col items-center justify-center text-center'>
+                    <p className='font-bold text-[36px]'>My Portfolio</p>
+                    <p className='mt-6 max-w-[810px]'>Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+                </div>
+                <div className='mt-[42px] flex flex-wrap justify-center gap-16 max-lg:px-2'>
+                    {
+                        lists.map((list, index) => <Cards img={list.img} title={list.title} categories={list.category} key={index + 1} />)
+                    }
+                </div>
             </div>
         </div>
     )
