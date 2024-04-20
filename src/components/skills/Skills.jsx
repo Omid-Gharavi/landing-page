@@ -53,7 +53,7 @@ const Skill = ({ title, amount }) => {
             <span className="font-bold">{title}</span>
             <div className="mt-2 flex items-center gap-4">
                 <div className="w-full max-w-[420px] h-[5px] bg-[#E1E1E1]">
-                    <div className={`bg-[#1F1F1F] w-[${amount}%] h-full`}></div>
+                    <div className='bg-[#1F1F1F] h-full' style={{ width: `${amount}%` }}></div>
                 </div>
                 <span className="font-bold">{amount}%</span>
             </div>
