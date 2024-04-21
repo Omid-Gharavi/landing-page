@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/about/About'
+import Blog from './components/blog/Blog'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Portfolio from './components/portfolio/Portfolio'
@@ -22,6 +23,7 @@ function App() {
       <Portfolio />
       <Skills />
       <Testemonials />
+      <Blog />
     </>
   )
 }
