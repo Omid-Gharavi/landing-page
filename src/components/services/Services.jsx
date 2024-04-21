@@ -29,7 +29,7 @@ const Services = () => {
     ]
 
     return (
-        <div className="bg-white py-16 flex flex-col justify-center items-center max-lg:px-4">
+        <div className="bg-white py-16 flex flex-col justify-center items-center max-lg:px-4" id='Services'>
             <p className="text-center font-bold text-[36px]">Services</p>
             <p className="text-center mt-6 max-w-[810px]">Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
             <div className="flex flex-wrap max-lg:justify-center mt-8 gap-12">

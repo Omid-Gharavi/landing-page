@@ -36,7 +36,7 @@ const Portfolio = () => {
     ]
 
     return (
-        <div className='relative min-h-[940px]'>
+        <div className='relative min-h-[940px]' id='Portfolio'>
             <div className='absolute w-full min-h-[318px] -z-30 bg-[#FFD4D0]'></div>
             <div className='px-2'>
                 <div className='pt-[50px] flex flex-col items-center justify-center text-center'>

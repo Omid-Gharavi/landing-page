@@ -9,9 +9,11 @@ export const links = [
     },
     {
         title: 'Services',
+        href: '#Services'
     },
     {
         title: 'Portfolio',
+        href: '#Portfolio'
     },
     {
         title: 'Blog',
