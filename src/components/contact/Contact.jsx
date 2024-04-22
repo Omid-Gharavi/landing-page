@@ -52,9 +52,28 @@ const Contact = () => {
                         {
                             text: 'Phone number',
                             type: 'tel',
+                            num: true,
                         },
                     ].map((list, index) =>
-                        <input className='inputForm' type={list.type} placeholder={list.text} />
+                        <input
+                            className='inputForm'
+                            type={list.type}
+                            placeholder={list.text}
+                            onChange={(e) => {
+                                if (list.num) {
+                                    const inputValue = event.target.value
+                                    event.target.value = inputValue.replace(/\D/g, '')
+                                }
+                            }}
+                            onKeyPress={(e) => {
+                                if (list.num) {
+                                    const keyCode = e.keyCode || e.which;
+                                    if (!(keyCode >= 48 && keyCode <= 57)) {
+                                        e.preventDefault();
+                                    }
+                                }
+                            }}
+                        />
                     )
                 }
                 < textarea id='myTextarea' className='py-[13px] px-4 resize-none' placeholder='Your message' />
