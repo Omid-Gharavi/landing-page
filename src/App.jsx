@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-[#FFD4D0] min-h-[683px] max-lg:min-h-[auto]'>
+      <div className='bg-[#FFD4D0] min-h-[683px] max-2xl:min-h-[680.99px]'>
         <div className='mx-[124px] max-lg:mx-4'>
           <Header />
           <Hero />

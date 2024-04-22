@@ -52,7 +52,7 @@ const Cards = ({ img, date, title, text }) => {
                     <p className='font-bold'>{title}</p>
                     <p className='text-[14px]'>{text}</p>
                 </div>
-                <div className='flex items-center gap-[13px] cursor-pointer mt-auto'>
+                <div className='flex items-center gap-[13px] cursor-pointer w-max mt-auto'>
                     <p className='font-bold text-[12px] select-none'>Read More</p>
                     <img src={readMore} alt="Read-More" />
                 </div>

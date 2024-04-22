@@ -21,4 +21,12 @@
         background: black;
         color: white;
     }
+
+    .underline {
+        transition: .2s ease;
+    }
+
+    .links:hover .underline {
+        @apply w-full
+    }
 }

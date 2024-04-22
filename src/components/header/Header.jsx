@@ -35,7 +35,10 @@ const Header = () => {
 
 const Li = ({ text, href }) => {
   return (
-    <a className='cursor-pointer py-4 myTest' href={href}>{text}</a>
+    <a className='links relative cursor-pointer py-4 myTest' href={href}>
+      {text}
+      <span className='underline absolute top-[73%] left-0 h-[3px] w-0 bg-emerald-700'></span>
+    </a>
   )
 }
 
