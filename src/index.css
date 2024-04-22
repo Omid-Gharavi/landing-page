@@ -29,4 +29,30 @@
     .links:hover .underline {
         @apply w-full
     }
+
+    .socialMedia {
+        @apply flex justify-center items-center w-[30px] h-[30px] bg-white rounded-full cursor-pointer;
+        transition: .3s ease;
+    }
+
+    .socialMedia:hover {
+        background: #FC3314;
+    }
+
+    .icon {
+        transition: .3s ease;
+    }
+
+    .socialMedia:hover .icon {
+        @apply invert;
+    }
+
+    .inputForm {
+        @apply px-4 py-[14px] bg-white;
+    }
+
+    input,
+    textarea:focus {
+        outline: none;
+    }
 }

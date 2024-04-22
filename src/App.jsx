@@ -1,6 +1,7 @@
 import './App.css'
 import About from './components/about/About'
 import Blog from './components/blog/Blog'
+import Contact from './components/contact/Contact'
 import Header from './components/header/Header'
 import Hero from './components/hero/Hero'
 import Portfolio from './components/portfolio/Portfolio'
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Testemonials />
       <Blog />
+      <Contact />
     </>
   )
 }

@@ -37,7 +37,7 @@ const Li = ({ text, href }) => {
   return (
     <a className='links relative cursor-pointer py-4 myTest' href={href}>
       {text}
-      <span className='underline absolute top-[73%] left-0 h-[3px] w-0 bg-emerald-700'></span>
+      <span className='underline absolute top-[73%] left-0 h-[3px] w-0 bg-[#FC3314]'></span>
     </a>
   )
 }
