@@ -5,8 +5,11 @@ import X from '../../assets/X.svg'
 import instagram from '../../assets/instagram.svg'
 import dribble from '../../assets/dribble.svg'
 import facebook from '../../assets/Facebook.svg'
+import { useRef } from 'react'
 
 const Contact = () => {
+    const inputRef = useRef()
+
     return (
         <div className="py-[124px] max-2xl:px-3 bg-[#FFD4D0] gap-[60px] flex flex-wrap justify-center">
             <div className="max-w-[566px]">
@@ -38,7 +41,9 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className='max-w-[566px] w-full grid gap-6 grid-cols-[repeat(1, minmax(0, 1fr))] grid-rows-[49px_49px_49px_168px]'>
+            <form
+                className='max-w-[566px] w-full grid gap-6 grid-cols-[repeat(1, minmax(0, 1fr))] grid-rows-[49px_49px_49px_168px]'
+            >
                 {
                     [
                         {
@@ -56,19 +61,14 @@ const Contact = () => {
                         },
                     ].map((list, index) =>
                         <input
+                            ref={inputRef}
                             className='inputForm'
                             type={list.type}
                             placeholder={list.text}
-                            onChange={(e) => {
-                                if (list.num) {
-                                    const inputValue = event.target.value
-                                    event.target.value = inputValue.replace(/\D/g, '')
-                                }
-                            }}
                             onKeyPress={(e) => {
                                 if (list.num) {
                                     const keyCode = e.keyCode || e.which;
-                                    if (!(keyCode >= 48 && keyCode <= 57)) {
+                                    if (!((keyCode >= 48 && keyCode <= 57) || keyCode === 43)) {
                                         e.preventDefault();
                                     }
                                 }
@@ -77,7 +77,20 @@ const Contact = () => {
                     )
                 }
                 < textarea id='myTextarea' className='py-[13px] px-4 resize-none' placeholder='Your message' />
-            </div>
+                <button
+                    type='button'
+                    className='bg-[#1F1F1F] mt-2 text-white font-bold w-[223px] h-[48px]'
+                    onClick={() => {
+                        const myInput = inputRef.current.value
+                        const pattern = /^\+?(\d{2})? ?(\d{3})? ?(\d{3})? ?(\d{4})?$/g
+                        if (pattern.test(myInput)) {
+                            console.log("True")
+                        } else {
+                            console.log("False")
+                        }
+                    }}
+                >Send Message</button>
+            </form>
         </div>
     )
 }
