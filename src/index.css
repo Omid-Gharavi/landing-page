@@ -55,4 +55,8 @@
     textarea:focus {
         outline: none;
     }
+
+    .contactCircle {
+        @apply absolute top-[50%] translate-y-[-50%] left-[-10%] max-2xl:left-[unset] max-2xl:top-[-4%] w-[221px] h-[221px] rounded-full bg-[#FC3314];
+    }
 }

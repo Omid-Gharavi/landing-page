@@ -8,7 +8,8 @@ import facebook from '../../assets/Facebook.svg'
 
 const Contact = () => {
     return (
-        <div className="py-[124px] max-2xl:px-3 bg-[#FFD4D0] gap-[60px] flex flex-wrap justify-center">
+        <div className="relative overflow-hidden py-[124px] max-2xl:px-3 bg-[#FFD4D0] gap-[60px] flex flex-wrap justify-center">
+            <span className='contactCircle'></span>
             <div className="max-w-[566px]">
                 <p className="font-bold text-[36px]">Get in Touch</p>
                 <p className="mt-4">Have a question or a project in mind? I'd love to hear from you. Let's chat and make something amazing together.</p>
