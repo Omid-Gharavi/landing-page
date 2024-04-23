@@ -83,7 +83,7 @@ const Contact = () => {
                     className='bg-[#1F1F1F] mt-2 text-white font-bold w-[223px] h-[48px]'
                     onClick={() => {
                         const myInput = inputRef.current.value
-                        const pattern = /^\+?(\d{2})? ?(\d{3})? ?(\d{3})? ?(\d{4})?$/g
+                        const pattern = /^\+?(\d{1,2})? ?(\d{3})? ?(\d{3})? ?(\d{4})?$/g
                         if (pattern.test(myInput)) {
                             console.log("True")
                         } else {
