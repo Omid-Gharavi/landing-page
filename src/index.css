@@ -59,4 +59,40 @@
     .contactCircle {
         @apply absolute top-[50%] translate-y-[-50%] left-[-10%] max-2xl:left-[unset] max-2xl:top-[-4%] w-[221px] h-[221px] rounded-full bg-[#FC3314];
     }
+
+    .statusAnimation {
+        @apply fixed bg-white shadow-2xl rounded-lg p-2 w-[200px] h-20 bottom-[100%] overflow-hidden right-5;
+        transition: ease .6s;
+    }
+
+    .true {
+        @apply bottom-[86%];
+    }
+
+    .false {
+        @apply bottom-[86%];
+    }
+
+    .deactive {
+        @apply bottom-[100%];
+    }
+
+    .timeAnimation {
+        @apply absolute left-0 bottom-0 w-full h-2 rounded-md;
+        animation: timeAnime;
+        animation-delay: 200ms;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+
+    @keyframes timeAnime {
+        0% {
+            @apply w-full;
+        }
+
+        100% {
+            @apply w-[0%];
+        }
+    }
 }

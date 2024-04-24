@@ -12,7 +12,7 @@ import Testemonials from './components/testemonials/Testemonials'
 function App() {
 
   return (
-    <>
+    <div className='relative'>
       <div className='bg-[#FFD4D0] min-h-[683px] max-2xl:min-h-[680.99px]'>
         <div className='mx-[124px] max-lg:mx-4'>
           <Header />
@@ -26,7 +26,7 @@ function App() {
       <Testemonials />
       <Blog />
       <Contact />
-    </>
+    </div>
   )
 }
 
