@@ -35,7 +35,7 @@ const Contact = () => {
                                     <div>
                                         <img src={list.img} alt="icon" />
                                     </div>
-                                    <p>{list.text}</p>
+                                    <p className='select-none'>{list.text}</p>
                                 </div>
                             )
                         }
