@@ -66,15 +66,15 @@
     }
 
     .true {
-        @apply bottom-[86%];
+        @apply bottom-[86%] opacity-100;
     }
 
     .false {
-        @apply bottom-[86%];
+        @apply bottom-[86%] opacity-100;
     }
 
     .deactive {
-        @apply bottom-[100%];
+        @apply bottom-[100%] opacity-0;
     }
 
     .timeAnimation {
