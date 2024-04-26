@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { dataTrasnfer } from '../header/Header'
-import logo from '../../assets/Logo.svg'
+import logo from '../../assets/Logo.svg';
 
 export const links = [
     {

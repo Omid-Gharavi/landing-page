@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import About from './components/about/About'
 import Blog from './components/blog/Blog'
@@ -9,11 +10,11 @@ import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
 import Skills from './components/skills/Skills'
 import Testemonials from './components/testemonials/Testemonials'
+import locale from './local/locale.js'
 
 function App() {
-
   return (
-    <div className='relative'>
+    <div className={`relative`}>
       <div className='bg-[#FFD4D0] min-h-[683px] max-2xl:min-h-[680.99px]'>
         <div className='mx-[124px] max-lg:mx-4'>
           <Header />
