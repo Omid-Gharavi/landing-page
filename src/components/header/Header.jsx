@@ -11,6 +11,7 @@ const Header = () => {
   const { t, i18n } = useTranslation(['header'])
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    document.body.dir = i18n.dir()
     setTrans(!trans)
     localStorage.setItem('trans', JSON.stringify(trans))
   }
@@ -19,7 +20,7 @@ const Header = () => {
     <>
       <header className='pt-10 header relative'>
         <span className='absolute rounded-full w-36 h-36 bg-[#FC3314] max-lg:w-20 max-lg:h-20 -z-10 left-[32%] top-[-40px]'></span>
-        <div className={`flex items-center justify-between ${trans ? 'flex-row-reverse' : 'flex-row'}`}>
+        <div className={`flex items-center justify-between`}>
           <img onClick={() => changeLanguage(i18n.language === 'fa_IR' ? 'en_US' : 'fa_IR')} src={logo} alt="logo" />
           <ul className='flex gap-8 font-bold text-[1.125rem]'>
             {

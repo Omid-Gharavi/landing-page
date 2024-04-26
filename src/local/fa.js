@@ -10,6 +10,7 @@ export default {
             title: 'سلام، من',
             titleName: 'سارا وکیلی',
             end: ' هستم',
+            description: 'به پرتفولیو طراحی من خوش آمدید .با من همراه شوید و با دنیای طراحی شگفت‌آور و متمایز من آشنا شوید.'
         },
     },
     en_US: {
@@ -22,7 +23,8 @@ export default {
             UX: 'UX Designer',
             title: "Hi There, I’m",
             titleName: 'Sarah Johns',
-            end: ''
+            end: '',
+            description: "Welcome to my portfolio of captivating digital experiences. Explore my work and let's create something extraordinary together."
         },
     }
 }

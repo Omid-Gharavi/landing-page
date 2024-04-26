@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif, 'Courier New', Courier, monospace;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100..900&display=swap');
 }
 
