@@ -14,8 +14,8 @@ const Hero = () => {
                 <p className={`text-[48px] font-bold max-lg:text-[2rem] ${!trans && 'max-2xl:text-center'}`}>{t('title')}<br /><span className='text-[#FC3314]'>{t('titleName')}</span>{t('end')}</p>
                 <p className='max-w-[457px] max-lg:text-center'>{t('description')}</p>
                 <div className='flex max-lg:justify-center gap-5 mt-5 w-full'>
-                    <button className='blackBtn' type='button'>Hire Me</button>
-                    <button className='whiteBtn' type='button'>Portfolio</button>
+                    <button className='blackBtn' type='button'>{t('Let\'s Talk')}</button>
+                    <button button className='whiteBtn' type='button' > {t('Portfolio')}</button>
                 </div>
             </div>
             <div>
