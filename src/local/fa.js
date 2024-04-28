@@ -16,6 +16,16 @@ export default {
             'Projects-Done': 'پروژه های انجام شده',
             'Years-of-Experience': 'سال تجربه',
             'Clients-Served': 'خدمات به مشتریان',
+            ServiceDescription: 'در بخش خدمات، ما به طراحی رابط کاربری (UI) و تجربه کاربری (UX)، تحقیقات تجربه کاربری، پروتوتایپینگ، تست و بهینه‌سازی متمرکز هستیم. هدف ما ایجاد تجربیات دیجیتالی بی‌نظیر و کارآمد برای کاربران و مشتریانتان است.',
+            Design: 'طراحی',
+            Branding: 'برندینگ',
+            'UX-Research': 'یو اکس ریسرچ',
+            'Usability-Testing': 'تست تجربه کاربری',
+            DesignDes: 'تخصص من در توسعه و طراحی وب است. با کمک خلاقیت و کارآمدی، تجربیات دیجیتالی جذاب و کاربرپسندی ایجاد می‌کنم.',
+            BrandingDes: "برندینگ متخصص برندینگ هستم و با طراحی‌های منحصر به فرد، شما را از رقبا تمایز می‌دهم و برندتان را ارتقاء می‌دهم.",
+            uxResearchDes: 'تخصص من در تحقیقات تجربه کاربری و توسعه وب است. من نیازهای کاربران شما را درک می‌کنم و محصولات را بهبود می‌دهم.',
+            usabilityTestingDes: 'من تست‌های تجربه کاربری انجام می‌دهم، طراحی‌ها را بهینه می‌کنم و توسعه وب را بر اساس بازخورد واقعی کاربران انجام می‌دهم.'
+
         },
     },
     en_US: {
@@ -35,6 +45,15 @@ export default {
             'Projects-Done': 'Porjects Done',
             'Years-of-Experience': 'Years of Experience',
             'Clients-Served': 'Clients Served',
+            ServiceDescription: "Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.",
+            Design: 'Design',
+            Branding: 'Branding',
+            'UX-Research': 'UX Research',
+            'Usability-Testing': 'Usability Testing',
+            DesignDes: 'I specialize in web development and design, creating visually appealing, user-friendly digital experiences.',
+            BrandingDes: "I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.",
+            uxResearchDes: '"I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.',
+            usabilityTestingDes: 'I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.'
         },
     }
 }
