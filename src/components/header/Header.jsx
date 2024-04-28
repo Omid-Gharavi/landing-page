@@ -24,7 +24,7 @@ const Header = () => {
           <img onClick={() => changeLanguage(i18n.language === 'fa_IR' ? 'en_US' : 'fa_IR')} src={logo} alt="logo" />
           <ul className='flex gap-8 font-bold text-[1.125rem]'>
             {
-              links.map((link, index) => <Li text={t(link.title)} href={link.href} key={index + 1} />)
+              links.map((link, index) => <Li text={t(link.title)} href={link.href} trans={trans} key={index + 1} />)
             }
           </ul>
           <button type='button' className='w-[127px] h-12 bg-[#1F1F1F] text-slate-50 font-bold'>{t("Let's Talk")}</button>
@@ -42,11 +42,11 @@ const Header = () => {
   )
 }
 
-const Li = ({ text, href }) => {
+const Li = ({ text, href, trans }) => {
   return (
     <a className='links relative cursor-pointer py-4 myTest' href={href}>
       {text}
-      <span className='underline absolute top-[73%] left-0 h-[3px] w-0 bg-[#FC3314]'></span>
+      <span className={`underline absolute top-[73%] h-[3px] w-0 bg-[#FC3314] ${trans ? 'right-0' : 'left-0'}`}></span>
     </a>
   )
 }
