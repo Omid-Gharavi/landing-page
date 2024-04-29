@@ -1,7 +1,10 @@
 
+import { useTranslation } from 'react-i18next'
 import portfolio from '../../assets/portfolio.svg'
 
 const Portfolio = () => {
+    const { t } = useTranslation(['header'])
+
     const lists = [
         {
             img: portfolio,
@@ -40,8 +43,8 @@ const Portfolio = () => {
             <div className='absolute w-full min-h-[318px] -z-30 bg-[#FFD4D0]'></div>
             <div className='px-2'>
                 <div className='pt-[50px] flex flex-col items-center justify-center text-center'>
-                    <p className='font-bold text-[36px]'>My Portfolio</p>
-                    <p className='mt-6 max-w-[810px]'>Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together.</p>
+                    <p className='font-bold text-[36px]'>{t('myPortfolio')}</p>
+                    <p className='mt-6 max-w-[810px]'>{t('portfolioDes')}</p>
                 </div>
                 <div className='mt-[42px] flex flex-wrap justify-center gap-16 max-lg:px-2'>
                     {

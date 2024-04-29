@@ -24,8 +24,9 @@ export default {
             DesignDes: 'تخصص من در توسعه و طراحی وب است. با کمک خلاقیت و کارآمدی، تجربیات دیجیتالی جذاب و کاربرپسندی ایجاد می‌کنم.',
             BrandingDes: "برندینگ متخصص برندینگ هستم و با طراحی‌های منحصر به فرد، شما را از رقبا تمایز می‌دهم و برندتان را ارتقاء می‌دهم.",
             uxResearchDes: 'تخصص من در تحقیقات تجربه کاربری و توسعه وب است. من نیازهای کاربران شما را درک می‌کنم و محصولات را بهبود می‌دهم.',
-            usabilityTestingDes: 'من تست‌های تجربه کاربری انجام می‌دهم، طراحی‌ها را بهینه می‌کنم و توسعه وب را بر اساس بازخورد واقعی کاربران انجام می‌دهم.'
-
+            usabilityTestingDes: 'من تست‌های تجربه کاربری انجام می‌دهم، طراحی‌ها را بهینه می‌کنم و توسعه وب را بر اساس بازخورد واقعی کاربران انجام می‌دهم.',
+            myPortfolio: 'پرتفولیو من',
+            portfolioDes: 'خدمات طراحی من را بررسی کنید، از رابط کاربری و تجربه تا ساخت نمونه‌ساز و تست. بیا کنار هم تجربه‌های دیجیتال استثنایی را ایجاد کنیم.'
         },
     },
     en_US: {
@@ -53,7 +54,9 @@ export default {
             DesignDes: 'I specialize in web development and design, creating visually appealing, user-friendly digital experiences.',
             BrandingDes: "I'm a branding expert, crafting unique visual identities that tell your story and resonate with your audience.",
             uxResearchDes: '"I specialize in user experience research, collaborating on web development, and ensuring user-friendly digital products.',
-            usabilityTestingDes: 'I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.'
+            usabilityTestingDes: 'I perform usability testing and optimize designs websites based on real-user feedback for seamless interactions.',
+            myPortfolio: 'My Portfolio',
+            portfolioDes: "Explore my design services, from user interface and experience to prototyping and testing. Let's craft exceptional digital experiences together."
         },
     }
 }
